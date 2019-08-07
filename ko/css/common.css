@@ -17,16 +17,16 @@
 
 @font-face{
 	font-family:"ms100";
-	src:url("font/MuseoSans-100.eot");
-	src:local(※), url("font/MuseoSans-100.woff") format("woff");
-	src: url('font/MuseoSans-100.woff') format('woff');
+	src:url("font/MUSEOSANS-100.eot");
+	src:local(※), url("font/MUSEOSANS-100.woff") format("woff");
+	src: url('font/MUSEOSANS-100.woff') format('woff');
 }
 
 @font-face{
 	font-family:"ms300";
-	src:url("font/MuseoSans-300.eot");
-	src:local(※), url("font/MuseoSans-300.woff") format("woff");
-	src: url('font/MuseoSans-300.woff') format('woff');
+	src:url("font/MUSEOSANS-300.eot");
+	src:local(※), url("font/MUSEOSANS-300.woff") format("woff");
+	src: url('font/MUSEOSANS-300.woff') format('woff');
 }
 
 @font-face{
@@ -74,9 +74,9 @@ body.bg-main{overflow-y:scroll;}
 .bg-main > .wrap > header.nav-trans .langMn a:hover{color:#ff5000;}
 .bg-main > .wrap > header.nav-trans .langMn a.on{color:#ff5000;}
 /* scroll시 header bg변경 */
-.nav-trans{background:transparent; 
+.nav-trans{background:transparent;
     transition: background-color .3s; -webkit-transition: background-color .3s;  -moz-transition: background-color .3s;  -o-transition:background-color .3s;}
-.nav-color{background:#fff; 
+.nav-color{background:#fff;
     transition: background-color .1s; -webkit-transition: background-color .1s; -moz-transition: background-color .1s; -o-transition:background-color .1s;}
 /* main_copy */
 div.mainCopy{padding:400px 0 0 230px; z-index:10;}
@@ -96,6 +96,7 @@ footer .info_copy dl dd:last-child::after{content:''; display:inline;}
 footer .info_copy p{display:inline-block; color:#c5c5c5; font-size:11px; margin-top:15px;}
 footer .footer_family {margin-top:16px; margin-right:60px;}
 footer .footer_family .link_item a{font-family:'NanumBarunGothic', nbgR, '돋움', dotum, sans-serif; margin-top:16px; color:#666;font-size: 11px; cursor: pointer;}
+footer .footer_family .link_item a:hover{color:#ff5000;}
 footer .footer_family .link_item span.family_icon{font-family:'ms700', sans-serif; font-size:12px; margin-left:15px; color:#000;}
 footer .footer_family .link_item span.family_icon:hover {cursor:pointer;}
 .family_wrap{position:absolute; top:-44px; height:44px; background:#000; width:100%; text-align:right; display: none; z-index:55;}
@@ -103,6 +104,7 @@ footer .footer_family .link_item span.family_icon:hover {cursor:pointer;}
 .family_wrap ul::after {content:''; display:block; clear:both;}
 .family_wrap ul li{float:left; font-size:12px; margin-left:20px;}
 .family_wrap ul li a{color:#fff;}
+.family_wrap ul li a:hover{color:#ff5000;}
 .subbody footer{border-top:3px solid #000; margin-top:100px;}/* sub footer top border */
 
 /* ========== sub header 공통 ========== */
@@ -146,6 +148,8 @@ header .langMn a.on{color:#ff5000}
 .cont_header{margin-bottom:100px;}
 .cont_header h2::before{display:block; height:4px; background:#000; content:''; margin:0 2px 7px;}
 .cont_header h2{display:inline-block; font-family:'ms100', sans-serif; font-size:35px;}
+.cont_header h2.small::before{display:block; height:4px; width:30px;background:#000; content:''; margin:0 2px 7px;}/*작은text 사용시*/
+.cont_header h2.small{display:inline-block; font-family:'ms100', sans-serif; font-size:25px;}/*작은text 사용시*/
 .cont_header p{font-size:14px; letter-spacing:-.3px; color:#333; margin-top:30px;}
 
 .cont_imgbox{margin-bottom:100px; width:100%; text-align:center;}
