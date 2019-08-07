@@ -47,7 +47,9 @@
 .fl{float:left;}
 .fr{float:right;}
 .clearfix::after{content:''; display:block; clear:both;}
-.nbg{font-family:'NanumBarunGothic', nbgR, '돋움', dotum, sans-serif;}
+.pdT70{padding-top:70px !important;}
+.mgB0{margin-bottom:0px !important;}
+.nbg{font-family:'NanumBarunGothic', nbgR, '돋움', dotum, sans-serif !important;}
 body {font-family: 'NanumBarunGothic', nbgR, '돋움', dotum, sans-serif; line-height:1.2; min-width:1440px; overflow-x: hidden;}
 .wrap{z-index:3; position:relative; min-width:1440px; box-sizing: border-box; width:100%;}
 .subbody > .wrap{ }
@@ -147,10 +149,13 @@ header .langMn a.on{color:#ff5000}
 /*company*/
 .cont_header{margin-bottom:100px;}
 .cont_header h2::before{display:block; height:4px; background:#000; content:''; margin:0 2px 7px;}
-.cont_header h2{display:inline-block; font-family:'ms100', sans-serif; font-size:35px;}
+.cont_header h2{display:inline-block; font-family:'ms500', sans-serif; font-size:35px; font-weight:normal;}
 .cont_header h2.small::before{display:block; height:4px; width:30px;background:#000; content:''; margin:0 2px 7px;}/*작은text 사용시*/
-.cont_header h2.small{display:inline-block; font-family:'ms100', sans-serif; font-size:25px;}/*작은text 사용시*/
-.cont_header p{font-size:14px; letter-spacing:-.3px; color:#333; margin-top:30px;}
+.cont_header h2.small{display:inline-block; font-family:'ms500', sans-serif; font-size:25px;}/*작은text 사용시*/
+.cont_header h3::before {display:block; height: 2px; width: 46px; background:#000; content:''; margin-bottom:20px;}
+.cont_header h3{font-size: 21px; color: #050706; line-height: 26px; margin-bottom: 25px;}
+.cont_header p{font-size:15px; line-height:1.5; letter-spacing:-.3px; color:#333; margin-top:30px;}
+.cont_header p.tit_disc{font-size: 21px;color: #050706;line-height: 26px;margin-bottom: 25px;}
 
 .cont_imgbox{margin-bottom:100px; width:100%; text-align:center;}
 
@@ -186,6 +191,10 @@ header .langMn a.on{color:#ff5000}
 .p_post{font-size:12px; color:#666; margin:10px 0 20px;}
 .p_cmt{font-size:14px; color:#666; line-height:1.5;}
 
+/*policy*/
+.txt_list li {font-size: 15px; color: #666666; line-height: 1.5; padding-left: 15px; text-indent: -14px;}
+.txt_list li:before {content: ''; display: inline-block; background: #999; width: 6px; height: 6px; margin-right: 5px;}
+.txt_list li a {color: #ff5000; text-decoration: underline; font-size: 14px; margin-left:20px;}
 /* 바디에 스크롤 막는 방법 */
 .not_scroll{
     position: fixed;
