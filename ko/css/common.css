@@ -150,8 +150,8 @@ header .langMn a.on{color:#ff5000}
 .cont_header{margin-bottom:100px;}
 .cont_header h2::before{display:block; height:4px; background:#000; content:''; margin:0 2px 7px;}
 .cont_header h2{display:inline-block; font-family:'ms500', sans-serif; font-size:35px; font-weight:normal;}
-.cont_header h2.small::before{display:block; height:4px; width:30px;background:#000; content:''; margin:0 2px 7px;}/*작은text 사용시*/
-.cont_header h2.small{display:inline-block; font-family:'ms500', sans-serif; font-size:25px;}/*작은text 사용시*/
+/*.cont_header h2.small::before{display:block; height:4px; width:30px;background:#000; content:''; margin:0 2px 7px;}
+.cont_header h2.small{display:inline-block; font-family:'ms500', sans-serif; font-size:25px;}작은text 사용시*/
 .cont_header h3::before {display:block; height: 2px; width: 46px; background:#000; content:''; margin-bottom:20px;}
 .cont_header h3{font-size: 21px; color: #050706; line-height: 26px; margin-bottom: 25px;}
 .cont_header p{font-size:15px; line-height:1.5; letter-spacing:-.3px; color:#333; margin-top:30px;}
@@ -191,6 +191,7 @@ header .langMn a.on{color:#ff5000}
 .p_post{font-size:12px; color:#666; margin:10px 0 20px;}
 .p_cmt{font-size:14px; color:#666; line-height:1.5;}
 
+/*portfolio*/
 /*policy*/
 .txt_list li {font-size: 15px; color: #666666; line-height: 1.5; padding-left: 15px; text-indent: -14px;}
 .txt_list li:before {content: ''; display: inline-block; background: #999; width: 6px; height: 6px; margin-right: 5px;}

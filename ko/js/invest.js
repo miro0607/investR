@@ -23,7 +23,8 @@ invest.eventBind = function() {
 
       //팝업 이벤트 세팅
       //popup open
-      $(".pop_open").click(function(){
+      $(".pop_open").click(function(e){
+        e.preventDefault() || e.stopPropagation();//클릭시 a 태그 기본 이벤트 실행 방지
         var _empno = $(this).closest("figure").attr("empno");       //선택한 사람의 empno ex)1, 2, 3...
         var _teamcode = $(this).closest("div.content-box").prop("id");  //선택한 사람의 팀코드 ex)team01, team02...
         invest.openPop(_teamcode, _empno); //팝업 처리
@@ -60,7 +61,7 @@ invest.eventBind = function() {
       event.preventDefault();
       $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
   });
-  
+
   //LNB 서브메뉴 클릭 시
   $("div.lnb ul li").on("click", function(e){
     e.stopPropagation() || e.preventDefault();
