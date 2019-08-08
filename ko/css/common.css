@@ -180,7 +180,7 @@ header .langMn a.on{color:#ff5000}
 .popup .pop_content {position: relative; margin:-230px auto 0; top:50%; width: 800px; height: 460px; background:#fff; border:1px solid #333; padding:40px; text-align:right;}
 .popup .pop_content .pop_body{display:table; padding-top:40px; width:100%;}
 .popup .pop_content .pop_body::after{content:''; display: block; clear: both;}
-.popup .pop_content .pop_body .img_box{display:table-cell;width:220px; height:269px;}
+.popup .pop_content .pop_body .img_box{display:table-cell;width:178px; height:218px;}
 .popup .pop_content .pop_body .profile_box{display:table-cell;text-align:left; padding-left:30px; vertical-align: top;}
 .pop_close {position:relative;width:22px; height:22px; overflow:hidden; font-size: 0;}
 .pop_close:before,
@@ -188,22 +188,19 @@ header .langMn a.on{color:#ff5000}
 .pop_close:before {transform: skewX(45deg);}
 .pop_close:after {transform: skewX(-45deg);}
 .p_name{font-size:19px; color:#000;}
-.p_post{font-size:12px; color:#666; margin:10px 0 20px;}
+.p_post{font-size:12px; color:#666; margin:10px 0 15px;}
 .p_cmt{font-size:14px; color:#666; line-height:1.5;}
+.p_cmt::before{display: block; content:''; height:1px; background:#000; margin-bottom:15px;}
 
-/*portfolio*/
+/*portfolio_partners*/
+.cont_box ul.list_type1 {position:relative; width:100%;}
+.cont_box ul.list_type1 li{float:left; padding:0px; margin-right:10px; width:210px; height: 85px; position:relative; border:1px solid #e1e1e1; background:#fff; margin-bottom:10px;}
+.cont_box ul.list_type1 li:nth-child(5n){margin-right:0;}
+.cont_box ul.list_type2 {position:relative; width:100%;}
+.cont_box ul.list_type2 li{float:left; padding:0px; margin-right:65px; width:320px; height: 220px; position:relative; border:1px solid #e1e1e1; background:#fff; margin-bottom:65px;}
+.cont_box ul.list_type2 li:nth-child(3n){margin-right:0;}
+
 /*policy*/
 .txt_list li {font-size: 15px; color: #666666; line-height: 1.5; padding-left: 15px; text-indent: -14px;}
 .txt_list li:before {content: ''; display: inline-block; background: #999; width: 6px; height: 6px; margin-right: 5px;}
 .txt_list li a {color: #ff5000; text-decoration: underline; font-size: 14px; margin-left:20px;}
-/* 바디에 스크롤 막는 방법 */
-.not_scroll{
-    position: fixed;
-    overflow: hidden;
-    width: 100%;
-    height: 100%
-}
-.not_scroll .cont {
-    position: relative;
-    top: 0;
-}
