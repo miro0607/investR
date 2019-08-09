@@ -137,7 +137,8 @@ invest_team.draw_emp_info = function() {
           $("div.content ul.list_team", _target).append($(_h)); //타겟 div내에 ul.list_team에 위에서 생성한 li요소 붙이기
         });
       }
-      $("div.content div.cont_header h2").empty().html(this.displayname);
+      $("div.content div.cont_header h2").empty().html(this.displayname); //팀명 세팅
+      $("div.lnb a[href='#"+ i +"']").empty().html(this.displayname.toUpperCase());     //lnb에 팀명 세팅
     }
   });
 }
