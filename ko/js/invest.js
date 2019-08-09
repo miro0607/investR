@@ -23,7 +23,8 @@ invest.eventBind = function() {
 
       //팝업 이벤트 세팅
       //popup open
-      $(".pop_open").click(function(){
+      $(".pop_open").click(function(e){
+        e.preventDefault() || e.stopPropagation();//클릭시 a 태그 기본 이벤트 실행 방지
         var _empno = $(this).closest("figure").attr("empno");       //선택한 사람의 empno ex)1, 2, 3...
         var _teamcode = $(this).closest("div.content-box").prop("id");  //선택한 사람의 팀코드 ex)team01, team02...
         invest.openPop(_teamcode, _empno); //팝업 처리
@@ -45,22 +46,47 @@ invest.eventBind = function() {
       $("footer div.family_wrap").toggle();
   });
 
-  //메인 스크롤시 헤더 칼라변경
-  $(window).on("scroll", function () {
-      if ($(this).scrollTop() > 100) {
-          $(".bg-main header").removeClass("nav-trans").addClass("nav-color");
-      }
-      else {
-          $(".bg-main header").removeClass("nav-color").addClass("nav-trans");
-      }
-  });
+  //스크롤 이동 시 이벤트
+  $(window).on("scroll", function (event) {
+    var _y = $(this).scrollTop();       // 스크롤 위치
+    var _haslnb = $(".lnb").size() > 0 ? true : false;  //lnb가 있는지 여부(있는경우 true, 없는경우 false)
+    if (_haslnb) {  //lnb가 있는 경우 스크롤 시 lnb에 on효과 주기
+        var _length = $(".wrap div.content-box").length; // wrap div내부에 있는 div 개수
 
+        //wrap div내부에 있는 div 갯수 만큼 반복
+        for(var i=0 ; i < _length ; ++i) {
+            var _position = $(".wrap div.content-box").eq(i).position(); // wrap div내부에 있는 div의 위치값
+            var _height = $(".wrap div.content-box").eq(i).height();     // wrap div내부에 있는 div의 height값
+
+            // 스크롤 위치가 현재 보고있는 컨텐츠를 발견
+           if( _y < (_position.top + _height)) {
+               // 최종 활성화 되었던 네비가 지금 활성화해야하는 네비와 다르다면
+               if(!$(".lnb ul li").eq(i).hasClass("on")) {
+                   // 기존에 nav에 있던 클래스는 삭제
+                   $(".lnb ul li").removeClass("on");
+               }
+               // nav에 on클래스 추가
+               $(".lnb ul li").eq(i).addClass("on");
+               break;
+           }
+        }
+    }
+    
+    //메인 스크롤시 헤더 칼라변경
+    if (_y > 100) {
+      $(".bg-main header").removeClass("nav-trans").addClass("nav-color");
+    }
+    else {
+      $(".bg-main header").removeClass("nav-color").addClass("nav-trans");
+    }
+  });
+    
   //앵커이동시 부드럽게 이동
   $(".scroll").click(function(event){
       event.preventDefault();
       $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
   });
-  
+
   //LNB 서브메뉴 클릭 시
   $("div.lnb ul li").on("click", function(e){
     e.stopPropagation() || e.preventDefault();
