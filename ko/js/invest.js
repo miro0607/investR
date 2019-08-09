@@ -1,45 +1,16 @@
 // JavaScript Document
 $(document).ready(function() {
-    invest.init();
+  invest.init();
 });
 function invest() {};
-invest.emp_info = [];
 invest.init = function(){
-    invest.eventBind();
+  //team 페이지인 경우
+  if(window.location.href.indexOf("team.html") > -1) {
+    invest_team.getTeamInfo();
+  }
+  invest.eventBind();
 }
 invest.eventBind = function() {
-  //직원정보 json데이터 가져와 직원정보 html 그리기
-  var _url = "./json/emp_info.json";
-  $.ajax({
-    url : _url
-    ,async : true
-    ,datatype : "json"
-    ,cache : false
-    ,success : function(data, status, xhr){
-      //invest.emp_info 변수에 가져온 json데이터 세팅
-      invest.emp_info = data;
-      //직원정보 그리기
-      invest.draw_emp_info();
-
-      //팝업 이벤트 세팅
-      //popup open
-      $(".pop_open").click(function(e){
-        e.preventDefault() || e.stopPropagation();//클릭시 a 태그 기본 이벤트 실행 방지
-        var _empno = $(this).closest("figure").attr("empno");       //선택한 사람의 empno ex)1, 2, 3...
-        var _teamcode = $(this).closest("div.content-box").prop("id");  //선택한 사람의 팀코드 ex)team01, team02...
-        invest.openPop(_teamcode, _empno); //팝업 처리
-          $("html body").css('overflow','hidden');
-      });
-      //popup close
-      $(".pop_close").click(function(){
-        $("#popup").hide();
-        $("html body").css('overflow','auto');
-      });
-    }
-    ,error : function(xhr, status, err) {
-      console.log("ajax error : " + xhr);
-    }
-  });
 
   //푸터 패밀리사이트 토글
   $("footer div.footer_family div.link_item span.family_icon").off("click").on("click", function(){
@@ -71,7 +42,7 @@ invest.eventBind = function() {
            }
         }
     }
-    
+
     //메인 스크롤시 헤더 칼라변경
     if (_y > 100) {
       $(".bg-main header").removeClass("nav-trans").addClass("nav-color");
@@ -80,7 +51,7 @@ invest.eventBind = function() {
       $(".bg-main header").removeClass("nav-color").addClass("nav-trans");
     }
   });
-    
+
   //앵커이동시 부드럽게 이동
   $(".scroll").click(function(event){
       event.preventDefault();
@@ -102,41 +73,82 @@ invest.eventBind = function() {
   });
 }
 
+//team 페이지에서 쓰이는 함수들
+function invest_team() {}
+invest_team.emp_info = [];
+invest_team.getTeamInfo = function() {
+  //직원정보 json데이터 가져와 직원정보 html 그리기
+  var _url = "./json/emp_info.json";
+  $.ajax({
+    url : _url
+    ,async : true
+    ,datatype : "json"
+    ,cache : false
+    ,success : function(data, status, xhr){
+      //invest.emp_info 변수에 가져온 json데이터 세팅
+      invest_team.emp_info = data;
+      //직원정보 그리기
+      invest_team.draw_emp_info();
+
+      //팝업 이벤트 세팅
+      //popup open
+      $(".pop_open").click(function(e){
+        e.preventDefault() || e.stopPropagation();  //클릭시 a 태그 기본 이벤트 실행 방지
+        var _empno = $(this).closest("figure").attr("empno");       //선택한 사람의 empno ex)1, 2, 3...
+        var _teamcode = $(this).closest("div.content-box").prop("id");  //선택한 사람의 팀코드 ex)team01, team02...
+        invest_team.openPop(_teamcode, _empno); //팝업 처리
+          $("html body").css('overflow','hidden');
+      });
+      //popup close
+      $(".pop_close").click(function(){
+        $("#popup").hide();
+        $("html body").css('overflow','auto');
+      });
+    }
+    ,error : function(xhr, status, err) {
+      console.log("ajax error : " + xhr);
+    }
+  });
+}
+
 //가져온 json데이터로 부터 직원정보 넣기
-invest.draw_emp_info = function() {
+invest_team.draw_emp_info = function() {
   var _target;
   var _h = "";
-  $.each(invest.emp_info, function(i,v) {
+  $.each(invest_team.emp_info, function(i,v) {
     _target = $("div#"+i);      //타겟 div select ex) div#team01
     if (_target.size() > 0) {   //타겟 div가 존재하는 경우만 처리
       $("div.content ul.list_team", _target).empty(); //타겟 div내에 ul.list_team 내용 비우기
-      $.each(this, function(n,val){   //json데이터 갯수만큼 loop
-        _h = '<li>';
-        _h +=   '<figure role="empinfo" empno="'+ val.empno +'">';  //empno 세팅
-        _h +=     '<span>';
-        _h +=       '<a href="#" class="pop_open">';
-        _h +=         '<img class="emp_photo" src="'+ val.imgsrc +'" alt="" />';  //image 경로 세팅
-        _h +=       '</a>'
-        _h +=     '</span>';
-        _h +=     '<figurecaption>';
-        _h +=       '<p class="name">'+ val.name +'</p>';   //성명 세팅
-        _h +=       '<p class="post">' + val.post + '</p>'; //직급/직책 세팅
-        _h +=     '</figurecaption>';
-        _h +=   '</figure>';
-        _h += "</li>";
-        $("div.content ul.list_team", _target).append($(_h)); //타겟 div내에 ul.list_team에 위에서 생성한 li요소 붙이기
-      });
+      if(this["member"].length > 0) {
+        $.each(this["member"], function(n,val){   //json데이터 갯수만큼 loop
+          _h = '<li>';
+          _h +=   '<figure role="empinfo" empno="'+ val.empno +'">';  //empno 세팅
+          _h +=     '<span>';
+          _h +=       '<a href="#" class="pop_open">';
+          _h +=         '<img class="emp_photo" src="'+ val.imgsrc +'" alt="" />';  //image 경로 세팅
+          _h +=       '</a>'
+          _h +=     '</span>';
+          _h +=     '<figurecaption>';
+          _h +=       '<p class="name">'+ val.name +'</p>';   //성명 세팅
+          _h +=       '<p class="post">' + val.post + '</p>'; //직급/직책 세팅
+          _h +=     '</figurecaption>';
+          _h +=   '</figure>';
+          _h += "</li>";
+          $("div.content ul.list_team", _target).append($(_h)); //타겟 div내에 ul.list_team에 위에서 생성한 li요소 붙이기
+        });
+      }
+      $("div.content div.cont_header h2").empty().html(this.displayname);
     }
   });
 }
 
 //직원정보 상세 팝업 오픈
-invest.openPop = function(_teamcode, _empno) {
-  var _empinfo = invest.emp_info[_teamcode][_empno];          // 가져온 json Data에서 해당 사번의 정보 get
-  var _popup = $("div#popup");                                // popup div select
-  $("div.img_box img", _popup).attr("src", _empinfo.imgsrc);  // 사진 경로 세팅
-  $("p.p_name", _popup).empty().html(_empinfo.name);          // 성명 세팅
-  $("p.p_post", _popup).empty().html(_empinfo.post);          // 직급/직책 세팅
-  $("p.p_cmt", _popup).empty().html(_empinfo.comment);        // 설명 세팅
-  _popup.show();                                              // 팝업 div show
+invest_team.openPop = function(_teamcode, _empno) {
+  var _empinfo = invest_team.emp_info[_teamcode]["member"][_empno]; // 가져온 json Data에서 해당 사번의 정보 get
+  var _popup = $("div#popup");                                    // popup div select
+  $("div.img_box img", _popup).attr("src", _empinfo.imgsrc);      // 사진 경로 세팅
+  $("p.p_name", _popup).empty().html(_empinfo.name);              // 성명 세팅
+  $("p.p_post", _popup).empty().html(_empinfo.post);              // 직급/직책 세팅
+  $("p.p_cmt", _popup).empty().html(_empinfo.comment);            // 설명 세팅
+  _popup.show();                                                  // 팝업 div show
 }
