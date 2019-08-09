@@ -48,7 +48,7 @@ invest.eventBind = function() {
 
   //스크롤 이동 시 이벤트
   $(window).on("scroll", function (event) {
-    var _y = $(this).scrollTop();       // 스크롤 위치
+    var _y = $(this).scrollTop();       // 스크롤 위치1
     var _haslnb = $(".lnb").size() > 0 ? true : false;  //lnb가 있는지 여부(있는경우 true, 없는경우 false)
     if (_haslnb) {  //lnb가 있는 경우 스크롤 시 lnb에 on효과 주기
         var _length = $(".wrap div.content-box").length; // wrap div내부에 있는 div 개수
@@ -71,7 +71,7 @@ invest.eventBind = function() {
            }
         }
     }
-    
+
     //메인 스크롤시 헤더 칼라변경
     if (_y > 100) {
       $(".bg-main header").removeClass("nav-trans").addClass("nav-color");
@@ -80,7 +80,7 @@ invest.eventBind = function() {
       $(".bg-main header").removeClass("nav-color").addClass("nav-trans");
     }
   });
-    
+
   //앵커이동시 부드럽게 이동
   $(".scroll").click(function(event){
       event.preventDefault();
