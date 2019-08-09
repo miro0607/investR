@@ -168,7 +168,7 @@ header .langMn a.on{color:#ff5000}
 .cont_box ul.list_team li figure span {position:relative; width:178px; height: 218px; display:inline-block;}
 .cont_box ul.list_team li figure span a{width:100%; height:100%; display:inline-block;}
 .cont_box ul.list_team li figure span:hover a::before{top: 0; left: 0; background: #000; opacity: 0.4;}
-.cont_box ul.list_team li figure span:hover a::after{top: 0; left: 0; background: url('../images/img_more.png') 50% 50% no-repeat;}
+.cont_box ul.list_team li figure span:hover a::after{top: 0; left: 0; background: url('../images/team/img_more.png') 50% 50% no-repeat;}
 .cont_box ul.list_team li figure span:hover a::before,
 .cont_box ul.list_team li figure span:hover a::after{position: absolute; width: 100%; height: 100%; display: block; content: ""; z-index: 50;}
 .cont_box ul.list_team li figure figurecaption {display:block; padding:4px 2px 2px;}
