@@ -10,7 +10,6 @@
 <link rel="stylesheet" href="css/reset.css">
 <script src="//code.jquery.com/jquery-latest.min.js"></script>
 <script type="text/javascript" src="js/invest.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <meta property="og:type" content="website">
 <meta property="og:title" content="스마일게이트 인베스트먼트">
 <meta property="og:image" content="images/smilegateinvestment.jpg">
@@ -20,43 +19,6 @@
 <meta property="og:url" content="http://www.smilegateinvestment.com">
 <meta property="og:description" content="우리는 미래가 현재와 다르다는 것을 믿습니다. 그리고, 우리는 우리의 투자를 통해 좀 더 나은 미래를 만들어 간다고 믿습니다. 우리는 Mega Value Innovator입니다.">
 <meta name="description" content="우리는 미래가 현재와 다르다는 것을 믿습니다. 그리고, 우리는 우리의 투자를 통해 좀 더 나은 미래를 만들어 간다고 믿습니다. 우리는 Mega Value Innovator입니다.">
-<script>
-// 문서의 로딩이 모두 끝나면 호출
-$(document).ready(function() {
-    // wrap div내부에 있는 div 개수
-    var length = $(".wrap div.content-box").length;
-
-    // 스크롤이 움직이면
-    $(window).scroll(function(event){
-        // 스크롤 위치
-        var y = $(window).scrollTop();
-
-        // length 숫자만큼 반복합니다.
-        for(var i = 0; i < length; ++i) {
-            // wrap div내부에 있는 div의 위치값
-            var position = $(".wrap div.content-box").eq(i).position();
-            // wrap div내부에 있는 div의 height값
-            var height = $(".wrap div.content-box").eq(i).height();
-
-            // 스크롤 위치가 현재 보고있는 컨텐츠를 발견
-           if( y < (position.top + height)) {
-               // 최종 활성화 되었던 네비가 지금 활성화해야하는 네비와 다르다면
-               if(!$(".lnb ul li").eq(i).hasClass("on")) {
-                   // 기존에 nav에 있던 클래스는 삭제
-                   $(".lnb ul li").removeClass("on");
-               }
-
-               // nav에 on클래스 추가
-               $(".lnb ul li").eq(i).addClass("on");
-               break;
-           }
-
-        }
-    });
-
-});
-
-</script>
 </head>
 <body class="subbody">
     <div class="bg-object1 degL"></div>
