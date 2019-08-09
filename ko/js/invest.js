@@ -19,7 +19,7 @@ invest.eventBind = function() {
 
   //스크롤 이동 시 이벤트
   $(window).on("scroll", function (event) {
-    var _y = $(this).scrollTop();       // 스크롤 위치
+    var _y = $(this).scrollTop();       // 스크롤 위치1
     var _haslnb = $(".lnb").size() > 0 ? true : false;  //lnb가 있는지 여부(있는경우 true, 없는경우 false)
     if (_haslnb) {  //lnb가 있는 경우 스크롤 시 lnb에 on효과 주기
         var _length = $(".wrap div.content-box").length; // wrap div내부에 있는 div 개수
