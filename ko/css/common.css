@@ -157,7 +157,7 @@ header .langMn a.on{color:#ff5000}
 .cont_header p{font-size:15px; line-height:1.5; letter-spacing:-.3px; color:#333; margin-top:30px;}
 .cont_header p.tit_disc{font-size: 21px;color: #050706;line-height: 26px;margin-bottom: 25px;}
 
-.cont_imgbox{margin-bottom:100px; width:100%; text-align:center;}
+.cont_imgbox{margin-bottom:100px; width:100%; text-align:center;}/*지우기 대기중*/
 
 /*team*/
 .cont_box {width:100%; overflow: hidden;}
@@ -180,7 +180,7 @@ header .langMn a.on{color:#ff5000}
 .popup .pop_content {position: relative; margin:-230px auto 0; top:50%; width: 800px; height: 460px; background:#fff; border:1px solid #333; padding:40px; text-align:right;}
 .popup .pop_content .pop_body{display:table; padding-top:40px; width:100%;}
 .popup .pop_content .pop_body::after{content:''; display: block; clear: both;}
-.popup .pop_content .pop_body .img_box{display:table-cell;width:178px; height:218px;}
+.popup .pop_content .pop_body .img_box{display:table-cell;width:180px; height:220px;}
 .popup .pop_content .pop_body .profile_box{display:table-cell;text-align:left; padding-left:30px; vertical-align: top;}
 .pop_close {position:relative;width:22px; height:22px; overflow:hidden; font-size: 0;}
 .pop_close:before,
