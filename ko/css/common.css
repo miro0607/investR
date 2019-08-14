@@ -225,6 +225,18 @@ header .langMn a.on{color:#ff5500}
 .cont_box ul.list_type2 li{float:left; padding:0px; margin-right:65px; width:320px; height: 220px; position:relative; border:1px solid #e1e1e1; background:#fff; margin-bottom:65px;}
 .cont_box ul.list_type2 li:nth-child(3n){margin-right:0;}
 
+/*contact*/
+.cont_box .info_box{border-bottom:2px solid #000; padding-bottom:40px;}
+.cont_box .info_box{position:relative;}
+.cont_box .info_box div.info_contact{position:absolute;bottom:40px;}
+.cont_box .info_box div.info_contact dl {width:540px;}
+.cont_box .info_box div.info_contact dl dt{font-size:13px; color:#808080; font-family:'nbg', sans-serif;}
+.cont_box .info_box div.info_contact dl dd{font-size:18px; color:#333; margin-top:25px;}
+.cont_box .info_box div.info_contact ul {margin-top:50px;}
+.cont_box .info_box div.info_contact ul li{float:left; width:50%; font-family:'nbg', sans-serif;font-size:14px; line-height:28px;}
+.cont_box .info_box div.info_contact ul li > span {font-size:14px; color:#808080; }
+
+.info_map{width:460px; height:360px; border:1px solid #e1e1e1;}
 /*policy*/
 .txt_list li {font-size: 15px; color: #666; line-height: 1.5; padding-left: 15px; text-indent: -14px;}
 .txt_list li:before {content: ''; display: inline-block; background: #999; width: 6px; height: 6px; margin-right: 5px;}
