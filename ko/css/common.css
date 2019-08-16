@@ -146,7 +146,7 @@ header .langMn a.on{color:#ff5500}
 /*lnb*/
 .lnb ul {background:url('../images/common/bg_lnb.png') repeat-y 7px -16px;}
 .lnb li::after{content:''; display: block; clear: both;}
-.lnb li {margin-bottom:49px; height:17px;}
+.lnb li {margin-bottom:49px; height:16px; line-height:16px;}
 .lnb li a{display: inline; vertical-align: top; line-height: 17px; font-family: 'ms100', sans-serif; font-size: 14px; color: #999;}
 .lnb li a::before {width:16px; height:16px; display:inline-block; background:url('../images/common/bg_lnb_dot.png') no-repeat center; content:''; margin-right:14px;}
 .lnb li a:hover,.lnb li.on a{color:#000; font-weight:bold;}
