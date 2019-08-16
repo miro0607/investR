@@ -10,7 +10,6 @@
 <link rel="stylesheet" href="css/reset.css">
 <script src="//code.jquery.com/jquery-latest.min.js"></script>
 <script type="text/javascript" src="js/invest.js"></script>
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyCL5KAJnobU69J0JiZr1KFXik4saWDenwY" ></script>
 <meta property="og:type" content="website">
 <meta property="og:title" content="스마일게이트 인베스트먼트">
 <meta property="og:image" content="images/smilegateinvestment.jpg">
@@ -20,26 +19,14 @@
 <meta property="og:url" content="http://www.smilegateinvestment.com">
 <meta property="og:description" content="우리는 미래가 현재와 다르다는 것을 믿습니다. 그리고, 우리는 우리의 투자를 통해 좀 더 나은 미래를 만들어 간다고 믿습니다. 우리는 Mega Value Innovator입니다.">
 <meta name="description" content="우리는 미래가 현재와 다르다는 것을 믿습니다. 그리고, 우리는 우리의 투자를 통해 좀 더 나은 미래를 만들어 간다고 믿습니다. 우리는 Mega Value Innovator입니다.">
-
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?AIzaSyCL5KAJnobU69J0JiZr1KFXik4saWDenwY" ></script>
 <script type="text/javascript">
-		$(document).ready(function() {
-			var myLatlng = new google.maps.LatLng(37.400428, 127.110098); // 위치값 위도 경도
-    	var Y_point			= 37.400428;		// Y 좌표
-    	var X_point			= 127.110098;		// X 좌표
-    	var zoomLevel		= 17;				// 지도의 확대 레벨 : 숫자가 클수록 확대정도가 큼
-    	var markerTitle		= "스마일게이트 인베스트먼트";		// 현재 위치 마커에 마우스를 오버을때 나타나는 정보
-    	var markerMaxWidth	= 300;				// 마커를 클릭했을때 나타나는 말풍선의 최대 크기
-
-      // 말풍선 내용
-       var contentString = '<div id="content">' +
-       '<div id="siteNotice">' +
-       '</div>' +
-       '<h3 id="firstHeading" class="firstHeading">스마일게이트 인베스트먼트</h3>' +
-       '<div id="bodyContent">' +
-       '<p>경기도 성남시 분당구 판교역로 220 Ahnlab 5층<br />' +
-       'Tel. Tel 031) 622-4770</p>' +
-       '</div>' +
-       '</div>';
+$(document).ready(function() {
+	var myLatlng = new google.maps.LatLng(37.400411,127.110135); // 위치값 위도 경도
+	var Y_point			= 37.400411;		// Y 좌표
+	var X_point			= 127.110135;		// X 좌표
+	var zoomLevel		= 18;				// 지도의 확대 레벨 : 숫자가 클수록 확대정도가 큼
+	var markerTitle		= "스마일게이트 인베스트먼트";		// 현재 위치 마커에 마우스를 오버을때 나타나는 정보
 
 	var myLatlng = new google.maps.LatLng(Y_point, X_point);
 	var mapOptions = {
@@ -49,22 +36,12 @@
 					}
 	var map = new google.maps.Map(document.getElementById('locationMap'), mapOptions);
 	var marker = new google.maps.Marker({
-											position: myLatlng,
-											map: map,
-											title: markerTitle
-	});
-	var infowindow = new google.maps.InfoWindow(
-												{
-													content: contentString,
-													maxWizzzdth: markerMaxWidth
-												}
-			);
-	google.maps.event.addListener(marker, 'click', function() {
-		infowindow.open(map, marker);
-	});
+		  position: myLatlng,
+	  	map: map,
+		  title: markerTitle
+  });
 });
-		</script>
-
+</script>
 </head>
 <body class="subbody">
     <div class="wrap">
@@ -111,8 +88,8 @@
                                     <li>sginvestment@smilegate.com</li>
                                 </ul>
                             </div>
-                            <div class="info_map fr" id="locationMap">
-                            </div>
+                            <!--지도 //-->
+                            <div class="info_map fr" id="locationMap"></div>
                         </div>
                     </div>
 
