@@ -19,24 +19,21 @@ invest.eventBind = function() {
 
   //스크롤 이동 시 이벤트
   $(window).on("scroll", function (event) {
-    var _y = $(this).scrollTop();       // 스크롤 위치1
-    var _haslnb = $(".lnb").size() > 0 ? true : false;  //lnb가 있는지 여부(있는경우 true, 없는경우 false)
-    if (_haslnb) {  //lnb가 있는 경우 스크롤 시 lnb에 on효과 주기
-        var _length = $(".wrap div.content-box").length; // wrap div내부에 있는 div 개수
+    var _y = $(this).scrollTop();
+    var _haslnb = $(".lnb").size() > 0 ? true : false;
+    if (_haslnb) {
+        var _length = $(".wrap div.content-box").length;
 
         //wrap div내부에 있는 div 갯수 만큼 반복
         for(var i=0 ; i < _length ; ++i) {
-            var _position = $(".wrap div.content-box").eq(i).position(); // wrap div내부에 있는 div의 위치값
-            var _height = $(".wrap div.content-box").eq(i).height();     // wrap div내부에 있는 div의 height값
+            var _position = $(".wrap div.content-box").eq(i).position();
+            var _height = $(".wrap div.content-box").eq(i).height();
 
             // 스크롤 위치가 현재 보고있는 컨텐츠를 발견
            if( _y < (_position.top + _height)) {
-               // 최종 활성화 되었던 네비가 지금 활성화해야하는 네비와 다르다면
                if(!$(".lnb ul li").eq(i).hasClass("on")) {
-                   // 기존에 nav에 있던 클래스는 삭제
                    $(".lnb ul li").removeClass("on");
                }
-               // nav에 on클래스 추가
                $(".lnb ul li").eq(i).addClass("on");
                break;
            }
@@ -61,15 +58,15 @@ invest.eventBind = function() {
   //LNB 서브메뉴 클릭 시
   $("div.lnb ul li").on("click", function(e){
     e.stopPropagation() || e.preventDefault();
-    var _menus = $("div.lnb").children("li");  //LNB 최상위 메뉴 전체
-    _menus.removeClass("on"); //LNB 최상위 메뉴 전체 on 클래스 제거
+    var _menus = $("div.lnb").children("li");
+    _menus.removeClass("on");
 
-    var _submenus = $("div.lnb ul li");  //subMenu 전체
-    _submenus.removeClass("on");  //subMenu 전체 on 클래스 제거
+    var _submenus = $("div.lnb ul li");
+    _submenus.removeClass("on");
 
     var _parents = $(this).parents("div.lnb ul li");
-    $(_parents[0]).parent().addClass("on");  //현재 클릭한 subMenu의 최상위 메뉴 on 클래스 추가
-    $(this).addClass("on");  //현재 클릭한 subMenu on 클래스 추가
+    $(_parents[0]).parent().addClass("on");
+    $(this).addClass("on");
   });
 }
 
@@ -93,10 +90,10 @@ invest_team.getTeamInfo = function() {
       //팝업 이벤트 세팅
       //popup open
       $(".pop_open").click(function(e){
-        e.preventDefault() || e.stopPropagation();  //클릭시 a 태그 기본 이벤트 실행 방지
-        var _empno = $(this).closest("figure").attr("empno");       //선택한 사람의 empno ex)1, 2, 3...
-        var _teamcode = $(this).closest("div.content-box").prop("id");  //선택한 사람의 팀코드 ex)team01, team02...
-        invest_team.openPop(_teamcode, _empno); //팝업 처리
+        e.preventDefault() || e.stopPropagation();
+        var _empno = $(this).closest("figure").attr("empno");
+        var _teamcode = $(this).closest("div.content-box").prop("id");
+        invest_team.openPop(_teamcode, _empno);
           $("html body").css('overflow','hidden');
       });
       //popup close
@@ -116,40 +113,40 @@ invest_team.draw_emp_info = function() {
   var _target;
   var _h = "";
   $.each(invest_team.emp_info, function(i,v) {
-    _target = $("div#"+i);      //타겟 div select ex) div#team01
-    if (_target.size() > 0) {   //타겟 div가 존재하는 경우만 처리
-      $("div.content ul.list_team", _target).empty(); //타겟 div내에 ul.list_team 내용 비우기
+    _target = $("div#"+i);
+    if (_target.size() > 0) {
+      $("div.content ul.list_team", _target).empty();
       if(this["member"].length > 0) {
-        $.each(this["member"], function(n,val){   //json데이터 갯수만큼 loop
+        $.each(this["member"], function(n,val){
           _h = '<li>';
-          _h +=   '<figure role="empinfo" empno="'+ val.empno +'">';  //empno 세팅
+          _h +=   '<figure role="empinfo" empno="'+ val.empno +'">';
           _h +=     '<span>';
           _h +=       '<a href="#" class="pop_open">';
-          _h +=         '<img class="emp_photo" src="'+ val.imgsrc +'" alt="" />';  //image 경로 세팅
+          _h +=         '<img class="emp_photo" src="'+ val.imgsrc +'" alt="" />';
           _h +=       '</a>'
           _h +=     '</span>';
           _h +=     '<figurecaption>';
-          _h +=       '<p class="name">'+ val.name +'</p>';   //성명 세팅
-          _h +=       '<p class="post">' + val.post + '</p>'; //직급/직책 세팅
+          _h +=       '<p class="name">'+ val.name +'</p>';
+          _h +=       '<p class="post">' + val.post + '</p>';
           _h +=     '</figurecaption>';
           _h +=   '</figure>';
           _h += "</li>";
-          $("div.content ul.list_team", _target).append($(_h)); //타겟 div내에 ul.list_team에 위에서 생성한 li요소 붙이기
+          $("div.content ul.list_team", _target).append($(_h));
         });
       }
-      $("div.content div.cont_header h2", _target).empty().html(this.displayname.toUpperCase());      //팀명 세팅
-      $("div.lnb a[href='#"+ i +"']").empty().html(this.displayname.toUpperCase());     //lnb에 팀명 세팅
+      $("div.content div.cont_header h2", _target).empty().html(this.displayname.toUpperCase());
+      $("div.lnb a[href='#"+ i +"']").empty().html(this.displayname.toUpperCase());
     }
   });
 }
 
 //직원정보 상세 팝업 오픈
 invest_team.openPop = function(_teamcode, _empno) {
-  var _empinfo = invest_team.emp_info[_teamcode]["member"][_empno]; // 가져온 json Data에서 해당 사번의 정보 get
-  var _popup = $("div#popup");                                    // popup div select
-  $("div.img_box img", _popup).attr("src", _empinfo.imgsrc);      // 사진 경로 세팅
-  $("p.p_name", _popup).empty().html(_empinfo.name);              // 성명 세팅
-  $("p.p_post", _popup).empty().html(_empinfo.post);              // 직급/직책 세팅
-  $("p.p_cmt", _popup).empty().html(_empinfo.comment);            // 설명 세팅
-  _popup.show();                                                  // 팝업 div show
+  var _empinfo = invest_team.emp_info[_teamcode]["member"][_empno];
+  var _popup = $("div#popup");
+  $("div.img_box img", _popup).attr("src", _empinfo.imgsrc);
+  $("p.p_name", _popup).empty().html(_empinfo.name);
+  $("p.p_post", _popup).empty().html(_empinfo.post);
+  $("p.p_cmt", _popup).empty().html(_empinfo.comment);
+  _popup.show();
 }
