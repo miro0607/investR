@@ -1,0 +1,243 @@
+{
+    "ceo":{
+      "displayname" : "ceo"
+      ,"member" : [
+        {
+            "empno" : "0"
+            ,"name" : "Nam Ki-Moon"
+            ,"post" : "CEO"
+            ,"imgsrc" : "images/team/ceo.png"
+            ,"comment" : "CEO Nam Ki-Moon takes overall responsibilities for investment tasks.<br/>He earned Bachelor of Computing Statistics from Seoul National University and Master of Computer Engineering from University of New South Wales.<br/>After that, he has conducted a role of manager at the E-Commerce Team and Information Strategy Team of Samsung Electronics Head Office.<br/>He joined Smilegate Investment (former, MVP Venture Capital Investment) in 2000 as a founder, and has been a representative director since 2007.<br/>\"The challenging/devoted entrepreneurship based on right sense of ethics will bring the providence of Heaven!!!\""
+        }
+      ]
+    }
+    ,"team01": {
+      "displayname" : "Investment Division1"
+      ,"member" : [
+        {
+            "empno" : "0"
+            ,"name" : "Park Sang-Sun"
+            ,"post" : "EVP / Division Head"
+            ,"imgsrc" : "images/team/t1_01.png"
+            ,"comment" : "Executive Vice Presiden Park Sang-Sun serves as the division head of Investment Div. 1.<br/>Before he joined Smilegate Investment, he oversaw investments (as a senior managing director) at Aju IB Investment for 19 years, and before that, he had worked for Kookmin Bank and Korea Technology Finance Corporation."
+        }
+        ,{
+            "empno" : "1"
+            ,"name" : "Lee Jong-Ho"
+            ,"post" : "Senior Vice President"
+            ,"imgsrc" : "images/team/t1_02.png"
+            ,"comment" : "Senior Vice President Lee Jong-Ho has invested in Software, IT parts and materials, Healthcare and E-Service sectors.<br/>Before he joined Smilegate Investment, he was responsible for SM/SI work at Samsung SDS, and has participated in building internet banking system of Shinhan Bank/Korea Housing and Commercial Bank as a technical PM while he served for Financial Consulting Business Division of HP Korea as an IT consultant.<br/>He has started investment career from Samsung Venture Investment since 2000, and participated in Premier Partners, the first LLC in Korea, as a partner and continue to involve in the investment works until 2012.<br/>He has completed a Bachelor of New Materials Engineering from Pohang University of Science and Technology."
+        }
+        ,{
+            "empno" : "2"
+            ,"name" : "Paik In-Soo"
+            ,"post" : "Vice President"
+            ,"imgsrc" : "images/team/t1_03.png"
+            ,"comment" : "Vice President Paik In-Soo, who belongs to the Investment Div. 1, invests in services and companies in various industries such as food & agriculture, and ICT that are trying to make the world a better place.<br/>Before joining Smilegate Investment, he worked for Samsung Electronics as an engineer who developed mobile processors.<br/>He has completed a Bachelor of Electronic Engineering from Sogang University, a Master of Business Management from Seoul National University, and a Doctor of Management of Technology from Sungkyunkwan University.<br/>Insoo is currently VP of VC Div. Prior to joining Smilegate, he worked as a R&D Engineer at Semiconductor Div.<br/>in Samsung Electronics. Insoo received his B.S in Electronic Engineering from Sogang Univ., M.A in Business Administration from Seoul National Univ., PhD(ABD) in Management of Technology from Sungkyunkwan Univ."
+        }
+        ,{
+            "empno" : "3"
+            ,"name" : "Park Jung-In"
+            ,"post" : "Vice President"
+            ,"imgsrc" : "images/team/t1_04.png"
+            ,"comment" : "Vice President Park Jung-In, who works for the Investment Div. 1, invests in industries/companies such as ICT, Bio/Healthcare that will become a landmark.<br/>Before he joined Smilegate Investment, he has earned various investment experiences from Solidus Investment and M Venture Investment, and worked for SKYWORKS and Pantech as an engineer to develop smartphones.<br/>He has completed a Bachelor of Science in Electronics and Communications Engineering from Korea Maritime and Ocean University."
+        }
+        ,{
+            "empno" : "4"
+            ,"name" : "Ally Lee"
+            ,"post" : "Vice President"
+            ,"imgsrc" : "images/team/t1_05.png"
+            ,"comment" : "Vice President Ally Lee, who belongs to the Investment Div. 1, is in charge of investing in media/new media, entertainment area.<br/>Before he joined Smilegate Investment, he has taken charge of investment in contents area at Daesung Private Equity and Ilshin Investment Co., Ltd.<br/>He has completed a Bachelor of Psychology/German Language & Literature from Yonsei University and Master of Broadcasting and Film from the Graduate School of Journalism and Mass Communication of Yonsei University. "
+        }
+        ,{
+            "empno" : "5"
+            ,"name" : "Chang Jeong-Ho"
+            ,"post" : "Principal Manager"
+            ,"imgsrc" : "images/team/t1_06.png"
+            ,"comment" : "Principal Manager Chang Jeong-Ho, who belongs to the Investment Div. 1, takes charge of venture investment works for mainly IT service, mobile and healthcare sectors.<br/>Before he joined Smilegate Investment, he has developed leading technology at the Industrial Technology Research Institute of Samsung Electronics, and took charge of investing in growth capital sector at AJU IB Investment.<br/>He has completed a Bachelor of Astronomical Cosmology/Computer Science from Yonsei University, and earned MBA from Seoul National University."
+        }
+        ,{
+            "empno" : "6"
+            ,"name" : "Kang Jeong-Hoon"
+            ,"post" : "Principal Manager"
+            ,"imgsrc" : "images/team/t1_07.png"
+            ,"comment" : "Principal Manager Kang Jeong-Hoon, who belongs to the Investment Div. 1, has invested in IT materials, parts, medical devices and incrementally modified drug.<br/>Before he joined Smilegate Investment, he has conducted development of display/semiconductor materials at the Electronics Materials Research Institute of SDI, and then he was in charge of strategic investment in parts/materials/Bio at Samsung Venture Investment.<br/>He has completed a Master of Chemical Engineering from Pohang University of Science and Technology and earned techno MBA degree from KAIST."
+        }
+        ,{
+            "empno" : "7"
+            ,"name" : "Nam Hoon-Gon"
+            ,"post" : "Team Leader"
+            ,"imgsrc" : "images/team/t1_08.png"
+            ,"comment" : "Team Leader Nam Hoon Gon, who works for the Investment Div. 1, invests in internet service/platform and contents sector.<br/>Before he joined Smilegate Investment, he has taken charge of strategic planning works at the Wireless Division of Samsung Electronics.<br/>He has completed a Bachelor of Business Management from Seoul National University.<br/>Hoongon is currently Team Manager of VC Div, and he invests to IT / contents startups.<br/>Prior to joining Smilegate, he worked as a associate at Mobile Div. in Samsung Electronics.<br/>Hoongon received his B.S in Business Administration from Seoul National Univ."
+        }
+        ,{
+            "empno" : "8"
+            ,"name" : "Seo Kyung-Woo"
+            ,"post" : "Team Leader "
+            ,"imgsrc" : "images/team/t1_09.png"
+            ,"comment" : "Team Leader Seo Kyungwoo invests in game and ICT sectors as a member of the Investment Div. 1.<br/>Before he joined Smilegate Investment, he has taken charge of quant, portfolio management at Samsung Life Insurance Co., Ltd., and managed investment works at Nexon Korea.<br/>He has completed a Bachelor of Business Management from Seoul National University."
+        }
+        ,{
+            "empno" : "9"
+            ,"name" : "Kim Min-Jeong"
+            ,"post" : "Team Leader"
+            ,"imgsrc" : "images/team/t1_10.png"
+            ,"comment" : "Team Leader Kim Min-Jeong, who works for the Investment Div. 1, invests in the teams to pursue change and innovation with good and solid intention such as consumer products and ICT services, etc.<br/>We will grow together and build a value. Before she joined Smilegate, she has been in charge of China and marketing related works at startups and Hotel Lotte.<br/>She has completed a Bachelor of Law from Beijing University."
+        }
+      ]
+    }
+    ,"team02": {
+      "displayname" : "Investment Division2"
+      ,"member" : [
+        {
+            "empno" : "0"
+            ,"name" : "Ku Young-Kwon"
+            ,"post" : "EVP /Division Head"
+            ,"imgsrc" : "images/team/t2_01.png"
+            ,"comment" : "Executive Vice President Ku Young-Kwon, who belongs to the Investment Div. 2, invests in CMT (Communications, Media & Technologies) sector and BT (Bio-Technology) sector.<br/>Before he joined Smilegate Investment, he supported to build corporate, business and marketing strategies for communication companies, financial institutions and advanced technology companies in and out of Korea while he served for global consulting companies like Booz-Allen & Hamilton, Monitor Company and Bain & Company, etc., and he has taken charge of discovering new businesses at Solid Technologies, Inc.<br/>He has completed a Bachelor of Business Management from Seoul National University, and Master of Business Management from Sogang University."
+        }
+        ,{
+            "empno" : "1"
+            ,"name" : "Son Se-Hwi"
+            ,"post" : "Vice President"
+            ,"imgsrc" : "images/team/t2_02.png"            ,"comment" : "Vice President Son Se-Hwi belongs to the Investment Div. 2, and he invests in Korea and China Cross-Border.<br/>Before he joined Smilegate Investment, he has conducted works for IR and funds at LG Telecom, and took charge of management planning and starting businesses in China.<br/>He has completed Bachelor of Business Management/English Literature from Sogang University."
+        }
+        ,{
+            "empno" : "2"
+            ,"name" : "Steve Han"
+            ,"post" : "Vice President"
+            ,"imgsrc" : "images/team/t2_03.png"
+            ,"comment" : "Vice President Steve Han, who belongs to the Investment Div. 2, has invested in various sectors including Korea and China Cross-Border.<br/>Before joining Smilegate Investment, he has taken charge of various works such as smart phone development and control, new technology sourcing, technical planning, technical strategy, partnership, BAT cooperation strategy and building sourcing channels in Great China Region at the Wireless Division of Samsung Electronics for 10 years.<br/>He has completed a Bachelor of Electronics and Information System from Beijing Normal University and a Master of Electrical Engineering and Computer Science from Seoul National University."
+        }
+        ,{
+            "empno" : "3"
+            ,"name" : "Chang Heung-Sun"
+            ,"post" : "Principal Manager"
+            ,"imgsrc" : "images/team/t2_04.png"
+            ,"comment" : "Principal Manager Chang Heung-Sun, who belongs to Investment Div. 2, is mainly investing in Biohealthcare industry.<br/>He is interested in crossover area with multiple industries, and committed to analyze and invest based on data. He has studied and run businesses in China."
+        }
+        ,{
+            "empno" : "4"
+            ,"name" : "Ju Eun-Ji"
+            ,"post" : "Senior Associate"
+            ,"imgsrc" : "images/team/t2_05.png"
+            ,"comment" : "Senior Associate Ju Eun-Ji , who belongs to Investment Div. 2, is investing in Bio/healthcare sector.<br/>Before she joined Smilegate Investment, she proceeded researches for autoimmune disease in central nervous system at Korea Advanced Institute of Science and Technology, and took charge of strategic planning, internal investment inspection for pre-clinical/clinical tasks and portfolio management at SK Bio Farm.<br/>She has completed a Bachelor of Brain Science and Ethology from US Emory Unversity, and a Master of Biotechnology from the Graduate School of Engineering at Yonsei University."
+        }
+      ]
+    }
+    ,"team03": {
+      "displayname" : "Investment Division3"
+      ,"member" : [
+        {
+            "empno" : "0"
+            ,"name" : "Lee Chan-oeul"
+            ,"post" : "Vice President / Division Head"
+            ,"imgsrc" : "images/team/t3_01.png"
+            ,"comment" : "Vice President Lee Chan-oeul, a member of the Investment Div. 3, is in charge of investment in new and renewal energy/environment sector.<br/>Before he joined Smilegate, he has conducted business management for LG Chem Ltd., LG Telecom Co., Ltd. and Solid Technologies, Inc. for 13 years. "
+        }
+        ,{
+            "empno" : "1"
+            ,"name" : "Kim Kyoung-Hwan"
+            ,"post" : "Vice President"
+            ,"imgsrc" : "images/team/t3_02.png"
+            ,"comment" : "Vice President Kim Kyoung-Hwan, a member of the Investment Div. 3, takes charge of investment in environment, energy, cosmetics and related industries, and manages overseas investment (Vietnam).<br/>Before he joined Smilegate Investment, he has worked for Samil Accounting Corporation, Monitor Group, a global management consulting company, Macquarie Capital (Former, Shinhan Macquarie Financial Advisory), a global investment bank, Gordon Brothers Europe, a British private equity fund management company, Woongjin Capital, a Korean private equity fund management company and Pinestreet Infra, a company specialized in infra investment.<br/>Based on such experiences, he has developed capability to provide professional advisory on finance, banking and management strategies for the investment as well as the companies he invested in.<br/>He has completed a Master of Statistics from Korea University and earned a Master in Finance from London Business School, and has a CPA license."
+        }
+        ,{
+            "empno" : "2"
+            ,"name" : "Kim Seok"
+            ,"post" : "Team Leader"
+            ,"imgsrc" : "images/team/t3_03.png"
+            ,"comment" : "Team Leader Kim Seok, who belongs to the Investment Div. 3, is in charge of project investment in renewal energy/environment sectors and mezzanine investment for general companies.<br/>Before he joined Smilegate Investment, he was in charge of annual fund plan, financial assets portfolio planning, financial report for external shareholders and financial due diligence at the financial accounting team of Smilegate Entertainment.<br/>He has completed a Bachelor of Business Management from Seoul National University."
+        }
+        ,{
+            "empno" : "3"
+            ,"name" : "신명진"
+            ,"post" : "팀장"
+            ,"imgsrc" : "images/team/t3_04.png"
+            ,"comment" : "신명진 팀장은 투자3본부 소속으로 PE분야의 투자를 담당하고 있습니다. 스마일게이트인베스트먼트 합류 전에는 삼일회계법인(PwC) 감사본부에서 삼성중공업 등의 감사업무, Deal본부에서 롯데그룹, 현대중공업, SK텔레콤 등의 국내외 M&A, Valuation, 투자자문, 구조조정 업무를 담당한 바 있습니다. 서강대학교에서 중문학, 경영학 학사를 수료하였으며 공인회계사 자격을 가지고 있습니다."
+        }
+        ,{
+            "empno" : "4"
+            ,"name" : "Yun Won-Jun"
+            ,"post" : "Senior Associate"
+            ,"imgsrc" : "images/team/t3_05.png"
+            ,"comment" : "Senior Associate Yun Won-Jun, who belongs to the Investment Div. 3, invests in domestic and overseas investment (SEA).<br/>Before he joined Smilegate Investment, he was in charge of domestic and overseas investments at Sunbo Angel Partners.<br/>He has completed a Bachelor of Business Management from Haas School of Business of UC Berkeley."
+        }
+        ,{
+            "empno" : "5"
+            ,"name" : "Le Kieu Anh"
+            ,"post" : "Associate"
+            ,"imgsrc" : "images/team/t3_06.png"
+            ,"comment" : "Associate Le Kieu Anh, who works for the Investment Div. 3, invests in domestic and overseas sector (Vietnam).<br/>Before he joined Smilegate Investment, he was in charge of starting businesses and marketing in Vietnam at Sentbee Co., Ltd. (Start-up)<br/>He has completed a Bachelor of International Studies from Yonsei University."
+        }
+      ]
+    }
+    ,"team04":{
+      "displayname" : "Management Division"
+      ,"member" : [
+        {
+            "empno" : "0"
+            ,"name" : "Kim Nam-Jae"
+            ,"post" : "Vice President"
+            ,"imgsrc" : "images/team/t4_01.png"
+            ,"comment" : "Vice President Kim Nam-Jae, a member of the Management Div., is currently in charge of planning and administrative matters, and oversees the works of Management Support Div. Before he joined Smilegate Investment, he has conducted accounting audit, valuation, due diligence and computing audit at Samil Accounting Corporation.<br/>He has completed a Bachelor of Business Management from Sogang University and has a CPA license."
+        }
+        ,{
+            "empno" : "1"
+            ,"name" : "Kim You-Suk"
+            ,"post" : "Vice President"
+            ,"imgsrc" : "images/team/t4_02.png"
+            ,"comment" : "Vice President Kim You-Suk, a member of the Management Div., is in charge of managing funds and investments, and fund raising matters.<br/>He has majored in International Relations at Renmin University of China, and completed accounting MBA degree from the Graduate School of Management at Ajou University."
+        }
+        ,{
+            "empno" : "2"
+            ,"name" : "Hwang Yu-Jin"
+            ,"post" : "Vice President"
+            ,"imgsrc" : "images/team/t4_03.png"
+            ,"comment" : "Vice President Hwang Yu-Jin takes responsibility for accounting part and compliance work in the Management Support Div.<br/>Before she join Smilegate Investment, she has taken responsibilities for investment management and overall administrative works at Stick Investment Co., Ltd. And Michigan Venture Capital Co., Ltd.<br/>She has majored in Venture Businesses at the School of Management of Konkuk University."
+        }
+        ,{
+            "empno" : "3"
+            ,"name" : "Park, MK ; Mun-Kyu"
+            ,"post" : "Executive advisor"
+            ,"imgsrc" : "images/team/t4_04.png"
+            ,"comment" : "Executive advisor Park, MK ; Mun-Kyu, who works for the Management Div., is conducting investment risk management, follow-up for investee companies and value enhancement.<br/>Before joining Smilegate Investment, he was in charge of CFO and overseas sales at SK Hynix, Samsung Medison, SOLiD, Inc. and Genoray Co., Ltd.<br/>He has completed a Bachelor of Business Management from Seoul National University. "
+        }
+        ,{
+            "empno" : "4"
+            ,"name" : "Kim Hye-Jin"
+            ,"post" : "Senior Manager"
+            ,"imgsrc" : "images/team/t4_05.png"
+            ,"comment" : "Senior Manager Kim Hye-Jin is in charge of investment and associate management in the Management Div.<br/>Before she joined Smilegate Investment, she worked at the Investment Support Team/Venture Investment Information Center of Korea Venture Capital Association and IMM Investment Corp.<br/>She has completed a bachelor's degree in Journalism and Broadcasting/Business Management from Kyunghee University. "
+        }
+        ,{
+            "empno" : "5"
+            ,"name" : "송영철"
+            ,"post" : "과장"
+            ,"imgsrc" : "images/team/t4_06.png"
+            ,"comment" : "송영철 과장은  경영지원본부 소속으로 현재 Risk Management 및 Value-add 업무를 담당하고 있습니다. 스마일게이트인베스트먼트에 합류하기 전에는 삼일회계법인에서 회계감사, 내부통제구축, 전산감사 등을 수행하였습니다. 연세대학교에서 정보산업공학 학사를 수료하였으며, 공인회계사 자격을 가지고 있습니다."
+        }
+        ,{
+            "empno" : "6"
+            ,"name" : "Yang Hyun-Ah"
+            ,"post" : "Senior Associate"
+            ,"imgsrc" : "images/team/t4_07.png"
+            ,"comment" : "Senior Associate Yang Hyun-Ah is in charge of administration and association management in the Management Div.<br/>She has majored in Economics and Finance at Suwon University."
+        }
+        ,{
+            "empno" : "7"
+            ,"name" : "Park Se-Na"
+            ,"post" : "Senior Associate"
+            ,"imgsrc" : "images/team/t4_08.png"
+            ,"comment" : "Senior Associate Park Se-Na, who belongs to Management Div., is in charge of investment and association management works.<br/>She has majored in Hotel Management at Kyunghee University."
+        }
+        ,{
+            "empno" : "8"
+            ,"name" : "Jeong Chul-Won"
+            ,"post" : "Associate"
+            ,"imgsrc" : "images/team/t4_09.png"
+            ,"comment" : "Associate Jeong Chul-Won, who works for the Management Div., is now in charge of accounting and funds related works.<Br/>He has majored in Business Management at Hongik University."
+        }
+      ]
+    }
+}

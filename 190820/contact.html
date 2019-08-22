@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"/><![endif]-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=1440" />
+<title>스마일게이트 인베스트먼트</title>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/reset.css">
+<script src="//code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="js/invest.js"></script>
+<meta property="og:type" content="website">
+<meta property="og:title" content="스마일게이트 인베스트먼트">
+<meta property="og:image" content="images/smilegateinvestment.jpg">
+<meta property="og:image:alt" content="Smilegate Investment">
+<meta property="og:image:width" content="400">
+<meta property="og:image:height" content="300">
+<meta property="og:url" content="http://www.smilegateinvestment.com">
+<meta property="og:description" content="우리는 미래가 현재와 다르다는 것을 믿습니다. 그리고, 우리는 우리의 투자를 통해 좀 더 나은 미래를 만들어 간다고 믿습니다. 우리는 Mega Value Innovator입니다.">
+<meta name="description" content="우리는 미래가 현재와 다르다는 것을 믿습니다. 그리고, 우리는 우리의 투자를 통해 좀 더 나은 미래를 만들어 간다고 믿습니다. 우리는 Mega Value Innovator입니다.">
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?AIzaSyCL5KAJnobU69J0JiZr1KFXik4saWDenwY" ></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	var myLatlng = new google.maps.LatLng(37.400411,127.110135); // 위치값 위도 경도
+	var Y_point			= 37.400411;		// Y 좌표
+	var X_point			= 127.110135;		// X 좌표
+	var zoomLevel		= 18;				// 지도의 확대 레벨 : 숫자가 클수록 확대정도가 큼
+	var markerTitle		= "스마일게이트 인베스트먼트";		// 현재 위치 마커에 마우스를 오버을때 나타나는 정보
+
+	var myLatlng = new google.maps.LatLng(Y_point, X_point);
+	var mapOptions = {
+						zoom: zoomLevel,
+						center: myLatlng,
+						mapTypeId: google.maps.MapTypeId.ROADMAP
+					}
+	var map = new google.maps.Map(document.getElementById('locationMap'), mapOptions);
+	var marker = new google.maps.Marker({
+		  position: myLatlng,
+	  	map: map,
+		  title: markerTitle
+  });
+});
+</script>
+</head>
+<body class="subbody">
+    <div class="wrap">
+        <!-- background// -->
+        <div class="bg-object1 degL"></div>
+        <div class="bg-objectTv"></div>
+        <div class="bg-objectRv"></div>
+        <!-- //background -->
+        <header class="header">
+            <h1>
+                <a href="index.html">Smilegate Investment</a>
+            </h1>
+            <div class="gnb">
+                <ul>
+                    <li><a href="company.html">COMPANY</a></li>
+                    <li><a href="team.html">TEAM</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="partners.html">PARTNERS</a></li>
+                    <li class="on"><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="langMn">
+                <a href="/ko/index.html" class="on">KOR</a> <span> / </span> <a href="/en/index.html">ENG</a>
+            </div>
+        </header>
+        <div class="container">
+            <div class="content-box">
+                <div class="content">
+                    <div class="cont_header">
+                        <h2>Contact</h2>
+                    </div>
+
+                    <div class="cont_box">
+                        <div class="info_box clearfix">
+                            <div class="info_contact fl">
+                                <dl>
+                                  <dt>ADDRESS</dt>
+                                  <dd>경기도 성남시 분당구 판교역로 220<br/>Ahnlab 5층</dd>
+                                </dl>
+                                <ul>
+                                    <li><span>TEL.</span> 031 - 622 - 4770</li>
+                                    <li><span>E-mail</span></li>
+                                    <li><span>FAX.</span> 031 - 622 - 4798</li>
+                                    <li>sginvestment@smilegate.com</li>
+                                </ul>
+                            </div>
+                            <!--지도 //-->
+                            <div class="info_map fr" id="locationMap"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="info_copy">
+                <dl>
+                    <dt>전화</dt>
+                    <dd>031-622-4770</dd>
+                    <dt>팩스</dt>
+                    <dd>031-622-4798</dd>
+                    <dt>주소</dt>
+                    <dd>성남시 분당구 판교역로 220 Ahnlab 5층</dd>
+                </dl>
+                <p>Copyright ⓒ Smilegate Investment, Inc. 2019 All rights reserved.</p>
+            </div>
+            <div class="footer_family fr" style="position:relative;">
+                <div class="link_item">
+                    <a href="policy.html">스튜어드십코드</a>
+                    <span class="family_icon">Family Site + </span>
+                </div>
+            </div>
+            <div class="family_wrap">
+                <ul>
+                    <li>
+                        <a href="http://www.smilegate.com" target="_blank">Smilegate</a>
+                    </li>
+                    <li>
+                        <a href="http://www.smilegatemegaport.com" target="_blank">Smilegate Megaport</a>
+                    </li>
+                    <li>
+                        <a href="http://www.smilegatefoundation.org/" target="_blank">Smilegate Foundation(CSR)</a>
+                    </li>
+                    <li>
+                        <a href="http://orangefarm.smilegate.com/" target="_blank">Smilegate Foundation(CSV)</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+        <!--팝업//-->
+        <div id="popup" class="popup">
+            <div class="pop_content">
+                <button class="pop_close">닫기</button>
+                <div class="pop_body">
+                    <div class="img_box">
+                        <img src="" alt="">
+                    </div>
+                    <div class="profile_box">
+                        <p class="p_name"></p>
+                        <p class="p_post"></p>
+                        <p class="p_cmt"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--//팝업-->
+    </div>
+</body>
+</html>
