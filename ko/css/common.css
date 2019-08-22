@@ -64,8 +64,8 @@ body {font-family: 'NanumBarunGothic', nbgR, '돋움', dotum, sans-serif; line-h
 .bg-main .wrap{height:100%;}
 /* ========== index ========== */
 /* visual */
-body.bg-main{overflow:hidden;position:relative;}
-.bg-main{background:url('../images/bg_index.png') no-repeat 0 0; min-width:1790px;}
+body.bg-main{overflow:hidden;position:relative; background-size:cover;}
+.bg-main{background:url('../images/bg_index.png') no-repeat 0 0; min-width:1440px;}
 /* background */
 .degR{transform: skewY(6.5deg);-webkit-transform: skewY(6.5deg);-moz-transform: skewY(6.5deg); -o-transform: skewY(6.5deg);}
 .degL{transform: skewY(-6.5deg);-webkit-transform: skewY(-6.5deg);-moz-transform: skewY(-6.5deg); -o-transform: skewY(-6.5deg);}
