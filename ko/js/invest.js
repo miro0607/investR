@@ -75,7 +75,7 @@ function invest_team() {}
 invest_team.emp_info = [];
 invest_team.getTeamInfo = function() {
   //직원정보 json데이터 가져와 직원정보 html 그리기
-  var _url = "./json/emp_info.json";
+  var _url = "/ko/json/emp_info.json";
   $.ajax({
     url : _url
     ,async : true
